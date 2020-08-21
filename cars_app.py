@@ -8,6 +8,7 @@ We have also included permissioning and authentication too to help you write rol
 IMPORTANT DISCLAIMER: The code here does not reflect Qxf2's coding standards and practices. 
 """
 
+import threading
 import os
 from functools import wraps
 import logging
@@ -242,5 +243,4 @@ def get_user_list():
     return jsonify({'message': 'You are not permitted to access this resource', 'successful': False}), 403
 
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+threading.Thread(target=app.run, kwargs={'host': '0.0.0.0','port':5000}).start() 
