@@ -1,6 +1,4 @@
 # cars-api
-[![Runme](https://runme.io/static/button.svg)](https://runme.io/run?app_id=f0dafdfd-5562-4aaa-870f-c30526c08584)
-
 A sample REST application to help testers learn to write API automation 
 
 ----
