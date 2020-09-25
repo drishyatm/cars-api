@@ -1,0 +1,8 @@
+version: 1.0
+publish: app
+services:
+  app:
+    image: cars-api:cars-api
+    ports:
+      - container: 5000
+        public: 80
